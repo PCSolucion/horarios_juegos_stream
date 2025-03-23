@@ -10,10 +10,11 @@
     --gray: #bbb;
     --black: #111;
 }
-
+@import url('https://fonts.cdnfonts.com/css/rajdhani');
 body{
 overflow: hidden;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Rajdhani', sans-serif !important;
+font-size: 25px !important;
 }
 
 .wrapper{
@@ -85,13 +86,16 @@ width: auto;
 max-width: 400px;
 padding: 20px;
 }
-
+h1 {
+    display:none;
+}
 h2{
-margin-left: 15px;
+margin-bottom: -20px;
+font-size: 23px !important;
 }
 
 .icon-container{
-display: inline-block;
+display: none;
 background-color: #000;
 color: #fff;
 width:30px;
@@ -115,7 +119,7 @@ color: #fff;
 .personal-bests ul{
 list-style: none;
 line-height: 2;
-font-size: 1rem;
+font-size: 25px !important;
 font-weight: 300;
 color: #ddd;
 padding: 0;
@@ -132,7 +136,7 @@ flex-grow: 1;
 }
 
 .personal-bests ul li .time {
-color: #46cf46;
+color: rgb(70, 207, 70);
 margin-left: 10px;
 }
 

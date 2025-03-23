@@ -26,8 +26,8 @@
 			<div class="personal-bests">
 				<h2><div class="icon-container"><i class="fa-solid fa-bullseye"></i></div> <span id="day-title"></span></h2>
 				<ul>
-					<li><span class="event">New World Aeternum</span><span class="time">17:00 - 19:00</span></li>
-					<li><span class="event">Once Human</span><span class="time">19:00 - 21:00</span></li>
+					<li><span class="event">New World Aeternum</span><span class="time">16:30 - 18:00</span></li>
+					<li><span class="event">Once Human</span><span class="time">18:00 - 20:00</span></li>
 				</ul>
 			</div>
 		</div>
@@ -36,13 +36,16 @@
 	<script>
 		// Obtener el día actual
 		const days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+		const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 		const today = new Date();
 		const dayName = days[today.getDay()];
 		const dayNumber = today.getDate();
+		const monthName = months[today.getMonth()];
+		const yearNumber = today.getFullYear();
 
-		// Actualizar el contenido del encabezado sin coma
-		document.getElementById("day-header").textContent = `${dayName} ${dayNumber}`;
-		document.getElementById("day-title").textContent = `${dayName} ${dayNumber}`;
+		// Actualizar el contenido del encabezado con el nuevo formato
+		document.getElementById("day-header").textContent = `${dayName}, ${dayNumber} de ${monthName} ${yearNumber}`;
+		document.getElementById("day-title").textContent = `${dayName}, ${dayNumber} de ${monthName} ${yearNumber}`;
 	</script>
 </body>
 </html>
