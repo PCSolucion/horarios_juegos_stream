@@ -79,7 +79,9 @@ position: relative;
 scale: .8;
 transition: .2s;
 }
-
+#day-title{
+font-size: 19px !important;
+}
 .personal-bests {
 margin: auto;
 width: auto;
@@ -141,6 +143,7 @@ flex-grow: 1;
 .personal-bests ul li .time {
 color: #ffffff;
 font-weight: 500;
+font-size: 20px;
 }
 
 @keyframes float1{
