@@ -87,6 +87,7 @@ margin: auto;
 width: auto;
 max-width: 400px;
 padding: 20px;
+margin-left: -25px;
 }
 #day-titledos{
     margin-top: 40px;
